@@ -6,81 +6,135 @@
     </style>
     <meta charset="UTF-8">
     <meta name="Description" content="width=device-width, initial-scale=1.0">
-    <title>Maquette</title>
+    <title>Maquette</title>    
+    <style>
+        input{
+            width: 100px;
+        }
+.header{
+    background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+.column1{
+  float: left;
+  width: 25%;
+  padding: 50px;
+}
+.rowHeader:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width:600px) {
+  .column1 {
+    width: 100%;
+  }
+}
+.column1 a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.rowContent{
+    content: "";
+  display: table;
+  clear: both;
+}
+.column2{
+  float: left;
+  width: 40%;
+  padding: 50px;
+}
+@media screen and (max-width:600px) {
+  .column2 {
+    column-width: 50px;
+  }
+}
+.remp{
+    background: url(Image/photo-bandeau.jpg);
+  padding: 200px;
+}
+
+
+    </style>
+  
 </head>
 <body>
-    <div>
-    <header> 
-        <table>
-            <td>
-                <tr>
-        <img src="Image/logo.png " width="80" height="80">
-    </tr>
-    </td>
-    <td>
-        <h3>BAIES ET VERANDA</h3>
-    </td>
-    <td>
-        <img src="Image/rge.jpg">
-    </td>
-      </table>   
-       
-    </header>
-    </div>
-    <div>
-   <article>
-    <h3>Estimer votre projet de Veranda gratuitement:</h3>
-    <img src="Image/photo-bandeau.jpg">
-       <h4>Veranda 91</h4>
-       <img src="Image/image1.jpg">
-       <table>
-           <tr>
-               <td>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste ea commodi facere adipisci mollitia atque numquam consequuntur obcaecati nobis dolorem, repellendus corporis incidunt dolor, eum ullam nam minus pariatur architecto!</p>
-                </p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dignissimos corporis! Obcaecati, ullam? Libero voluptatibus est quod molestiae sit fugit. Tempora optio eos reprehenderit praesentium, deleniti distinctio libero delectus. Sit.
-                    Perferendis deserunt pariatur officia soluta dolore illum, omnis saepe culpa adipisci ipsum sit maiores fugiat consequatur molestiae distinctio quidem ducimus sunt aliquam beatae ipsa facere! Nam praesentium saepe inventore a!
-                    Soluta quasi, debitis nostrum molestiae sequi sunt non natus quisquam laborum veritatis mollitia velit cupiditate quidem suscipit commodi placeat corporis doloremque maxime, deleniti modi tempore. Velit nemo inventore quo repellendus!
-                    Voluptate, sint ipsam! Ipsa hic nisi iure eaque, ex porro quod, soluta minus, ipsum quasi consequatur consectetur nobis debitis! Sapiente error ea, rem veritatis molestiae aliquid ipsa officiis mollitia neque!</p>
-                </td>
-           </tr>
-       </table>
-       <table>
-           <td>
-               <tr>
-                   <img src="Image/image3.png">
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, corrupti earum? Fugit provident libero minima, dolore exercitationem illo deleniti vel odit reiciendis eum in natus similique, blanditiis veritatis distinctio sed.</p>
+  
+   <header>
+       <div class= "rowHeader">
+           <div class="column1">
+               <img src="Image/logo.png">
+           </div>
+           <div class="column1">
+               <p><strong>BAIE ET VERANDAS</strong><br><strong>De France</strong></p>
 
-               </tr>
-           </td>
-           <td>
-               <tr>
-                   <img src="Image/image4.png">
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni debitis tempora ad? Natus adipisci aliquam odit. Beatae facilis itaque iure illum sequi dicta vero optio rerum, fugit culpa debitis minus?</p>
+           </div>
+        <div class="column1">
+            <a href="#">Nos Verandas</a>
+            <a href="#">Nos Relations</a>
+            <a href="#">Devis</a>
+            <a href="#">Contact</a>
+          </div>
+          <div class="column1">
+              <img src="Image/rge.jpg">
+          </div>
+          </div>
 
-               </tr>
-           </td>
-           <td>
-               <tr>
-                   <img src="Image/image5.png">
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, saepe impedit? Deleniti accusantium fugit aliquid, possimus libero veritatis delectus vero ratione optio. Laborum, quasi. Amet ab aliquid eum error est?</p>
+   </header>
 
-               </tr>
-           </td>
-       </table>
-       <table>
-           <td>
-               <tr>
-                   <h3>Devis en ligne</h3>
-               </tr>
-           </td>
-       </table>
+   <content>
 
-   </article>
-    </div>
-    <div>
+        <div class= "remp">
+            <form>
+                <label for="fname">Nom</label>
+                <input type="text" id="fname"name="fname">
+
+                <label for="tel">Tel</label>
+                <input type="number"id="tel"name="tel">
+
+                    <label for="Mail">Email</label>
+                    <input type="text" id="Mail"name="Mail">
+
+                    <label for="CP">Code Postal</label>
+                    <input type="number" id="Cde Postal"name="Code Postal">
+
+                    <label for="Surface">Surface</label>
+                    <input type="number" id="Surface"name="Surface">
+            </form>
+        </div>
+        
+
+        <div class="rowContent">
+            <div class="column2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eveniet neque voluptates sunt quis debitis est eligendi esse officiis! Quis animi, illum tempore cupiditate perferendis blanditiis impedit architecto quos a?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis facilis aperiam placeat eligendi esse ducimus inventore, doloremque laudantium explicabo. Eveniet vero ipsam ipsa cupiditate quibusdam in repellendus illum laborum numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ipsa qui perferendis minima beatae debitis repellendus earum dignissimos sint itaque id, assumenda dolorum quibusdam eaque veritatis est corrupti molestiae. Earum?Magni eaque officia nulla quam eveniet ipsum necessitatibus accusantium. Dignissimos deleniti eligendi aliquid tempora eos eaque atque debitis praesentium provident est ratione numquam optio culpa hic, alias dolorum, cupiditate ullam?</p>
+
+            </div>
+            <div class="column2">
+                <h3>DEVIS EN LIGNE</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id qui voluptatibus fugit nisi. Iure quisquam, culpa veritatis sequi reiciendis molestias ab laboriosam, tempora, consequuntur libero adipisci sit voluptas dolorum vitae?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolorem rerum fuga ullam, vitae dicta reiciendis? Fugiat, corrupti aliquid consectetur molestias qui quasi unde, minima sunt nulla laudantium natus repellat.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aliquid, distinctio ex esse fugiat non accusantium rem iusto laudantium ullam autem consectetur asperiores nobis, fuga atque, doloremque illo? Quia, expedita.</p>
+                <img src="Image/certification1.png">
+                <h3>DEVIS EN LIGNE</h3>
+
+
+            </div>
+
+        </div>
+   </content>
+
    <footer>
-       <address>Acceuil | Contact | Tel: .. .. .. .. </address>
+       <p>Accueil  | Contact  |  Numero  |.......</p>
+
    </footer>
-   </div>
 </body>
 </html>
